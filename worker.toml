@@ -1,0 +1,14 @@
+name = "remix-project"
+type = "javascript"
+
+[build]
+command = "yarn run build:production"
+upload_format = "workers-site"
+upload_dir = "dist/apps/remix-ide"
+
+[site]
+bucket = "./dist/apps/remix-ide"
+entry-point = "workers-site"
+
+[env.production]
+name = "remix-project-production"
